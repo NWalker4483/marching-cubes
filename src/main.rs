@@ -22,15 +22,6 @@ fn main() {
             0.,               // isosurface value
             domain.scale,     // scale
         ),
-        "fidget" => marching_cubes_fidget(
-            &expr,            // function to evaluate
-            domain.min_point, // minimum bounding box point
-            domain.x,         // x count
-            domain.y,         // y count
-            domain.z,         // z count
-            0.,               // isosurface value
-            domain.scale,     // scale
-        ),
         _ => panic!("Invalid mode flag."),
     };
 
